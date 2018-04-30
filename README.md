@@ -19,6 +19,7 @@ In this way, you can do almost the same thing as on Hierarchy without having to 
 
 # How to use
 Please double click on the package that can be downloaded from the link below and import it to Unity.
+
 https://github.com/yukiringo/PrefabEditor/raw/master/prefab_editor.unitypackage
 
 ![menu.png](https://github.com/yukiringo/PrefabEditor/raw/images/menu.png)
