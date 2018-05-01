@@ -233,7 +233,14 @@ public class PrefabTreeView : TreeView
             }
             else
             {
-                style.normal.textColor = gameObject.activeSelf && activeSelf ? Color.black : new Color(0.0f, 0.0f, 0.0f, 0.5f);
+                if (EditorGUIUtility.isProSkin)
+                {
+                    style.normal.textColor = gameObject.activeSelf && activeSelf ? new Color(0.7f, 0.7f, 0.7f, 1.0f) : new Color(0.7f, 0.7f, 0.7f, 0.5f);
+                }
+                else
+                {
+                    style.normal.textColor = gameObject.activeSelf && activeSelf ? Color.white : new Color(0.0f, 0.0f, 0.0f, 0.5f);
+                }
             }
             GUI.Label(toggleRect, gameObject.name, style);
         }
