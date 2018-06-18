@@ -23,6 +23,11 @@ public class PrefabEditor : EditorWindow
             var root = GetPrefabRoot();
             treeView.TargetPrefab = root;
             treeView.SetSelection(Selection.instanceIDs);
+            var id = Selection.activeInstanceID;
+            if (id != root.GetInstanceID())
+            {
+                treeView.FrameItem(id);
+            }
         }
 
         Repaint();
